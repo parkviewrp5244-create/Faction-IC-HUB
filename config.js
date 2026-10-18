@@ -38,5 +38,5 @@ window.CONFIG = {
       {n:"Weapon C", img:"assets/weapons/c.png", r:3},
       {n:"Weapon D", img:"assets/weapons/d.png", r:4}]}
   ],
-  spinAmounts: [1,3,5,10,25]
+  spinAmounts: [1,2,3,4,5,6,7,8,9,10]
 };
