@@ -9,14 +9,13 @@ window.CONFIG = {
   firebase: { apiKey:"AIzaSyBYf0bYRUUzWyhRYwFafQaie-DzeNAysmw", authDomain:"faction-ic-hub.firebaseapp.com", projectId:"faction-ic-hub", appId:"1:644989604483:web:7ce067e55cece017b381b6" },
   // Map image size in pixels (the width/height of assets/map.jpg)
   map: { img:"assets/map.jpg", w:1808, h:2712 },
-  boroughs: ["Harlem","The Bronx","Queens","Brooklyn","Staten Island"],
+  side: ["West Los Santos","North Los Santos","East Los Santos","South Los Santos"],
   // Thread submission questions (add/remove freely)
   questions: [
-    "What is your group's name and tag?",
-    "Describe your group's backstory and how it started.",
-    "Who are your founding members and their roles?",
+    "What is your faction name and nicknames if any",
+    "Describe your factions backstory and how it started.",
+    "Who are your founding members and their roles? Put discord names not display names and what role they have.",
     "Which area/turf do you want to claim and why?",
-    "Who are your allies and rivals?",
     "What will your group do to create RP (not just violence)?"
   ],
   // ROE sections: t = title, b = HTML body
