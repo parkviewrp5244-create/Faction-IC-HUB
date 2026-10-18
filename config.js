@@ -9,7 +9,7 @@ window.CONFIG = {
   firebase: { apiKey:"AIzaSyBYf0bYRUUzWyhRYwFafQaie-DzeNAysmw", authDomain:"faction-ic-hub.firebaseapp.com", projectId:"faction-ic-hub", appId:"1:644989604483:web:7ce067e55cece017b381b6" },
   // Map image size in pixels (the width/height of assets/map.jpg)
   map: { img:"assets/map.jpg", w:1808, h:2712 },
-  side: ["West Los Santos","North Los Santos","East Los Santos","South Los Santos"],
+  boroughs: ["Southside","Eastside","Westside","Northside"],
   // Thread submission questions (add/remove freely)
   questions: [
     "What is your faction name and nicknames if any",
