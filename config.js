@@ -6,7 +6,7 @@ window.CONFIG = {
   logo: "assets/logo.png",
   bg: "assets/bg.jpg",
   // Firebase (free) - see README. Needed for submissions + admin + map turfs.
-  firebase: { apiKey:"YOUR_API_KEY", authDomain:"YOUR_PROJECT.firebaseapp.com", projectId:"YOUR_PROJECT", appId:"YOUR_APP_ID" },
+  firebase: { apiKey:"AIzaSyBYf0bYRUUzWyhRYwFafQaie-DzeNAysmw", authDomain:"faction-ic-hub.firebaseapp.com", projectId:"faction-ic-hub", appId:"1:644989604483:web:7ce067e55cece017b381b6" },
   // Map image size in pixels (the width/height of assets/map.jpg)
   map: { img:"assets/map.jpg", w:4000, h:4000 },
   boroughs: ["Harlem","The Bronx","Queens","Brooklyn","Staten Island"],
