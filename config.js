@@ -1,8 +1,8 @@
 // ====== EDIT THIS FILE ONLY ======
 window.CONFIG = {
-  name: "Illegal Civ Hub",
-  tagline: "The home of the Illegal Civilian Scheme. Read the rules, submit your group's thread, and see where every crew stands on the map.",
-  footer: "YOUR SERVER · ILLEGAL CIVILIAN MANAGEMENT",
+  name: "Faction Hub",
+  tagline: "The home of the Faction Scheme. Read the rules, submit your faction thread, and see where every crew stands on the map.",
+  footer: "SOLS V2 · FACTION MANAGEMENT",
   logo: "assets/logo.png",
   bg: "assets/bg.jpg",
   // Firebase (free) - see README. Needed for submissions + admin + map turfs.
@@ -29,9 +29,9 @@ window.CONFIG = {
   // Weapon spin. r = rarity stars 1-5. img = file in assets/weapons/
   tiers: [
     {name:"Tier 1", weapons:[
-      {n:"Glock 19", img:"assets/weapons/glock19.png", r:2},
-      {n:"Sig P320", img:"assets/weapons/p320.png", r:2},
-      {n:"Glock 45", img:"assets/weapons/glock45.png", r:3}]},
+      {n:"Glock 43X", img:"assets/weapons/WEAPON_ILLEGALGLOCK43X.png", r:2},
+      {n:"Glock 17 Red Switch", img:"assets/weapons/WEAPON_GLOCK17REDSWITCH.png", r:2},
+      {n:"Glock 19 G5", img:"assets/weapons/WEAPON_GLOCK19GEN5.png", r:3}]},
     {name:"Tier 1.5", weapons:[
       {n:"Weapon A", img:"assets/weapons/a.png", r:3},
       {n:"Weapon B", img:"assets/weapons/b.png", r:2}]},
