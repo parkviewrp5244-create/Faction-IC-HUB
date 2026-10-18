@@ -8,7 +8,7 @@ window.CONFIG = {
   // Firebase (free) - see README. Needed for submissions + admin + map turfs.
   firebase: { apiKey:"AIzaSyBYf0bYRUUzWyhRYwFafQaie-DzeNAysmw", authDomain:"faction-ic-hub.firebaseapp.com", projectId:"faction-ic-hub", appId:"1:644989604483:web:7ce067e55cece017b381b6" },
   // Map image size in pixels (the width/height of assets/map.jpg)
-  map: { img:"assets/map.jpg", w:4000, h:4000 },
+  map: { img:"assets/map.jpg", w:477, h:477 },
   boroughs: ["Harlem","The Bronx","Queens","Brooklyn","Staten Island"],
   // Thread submission questions (add/remove freely)
   questions: [
