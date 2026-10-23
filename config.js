@@ -37,7 +37,7 @@ window.CONFIG = {
       {n:"G19 G Flex", img:"assets/weapons/WEAPON_G19FLEX.png", r:2},
       {n:"G19 G", img:"assets/weapons/WEAPON_G19G.png", r:2},
       {n:"G19X G", img:"assets/weapons/WEAPON_G19XG.png", r:2},
-      {n:"Glock 20", img:"assets/weapons/WEAPON_G20.png", r:2},
+      {n:"Glock 20", img:"assets/weapons/WEAPON_G20.png", r:3},
       {n:"Glock 21 Binary", img:"assets/weapons/WEAPON_G21B.png", r:2},
       {n:"Glock 22", img:"assets/weapons/WEAPON_G22.png", r:2},
       {n:"Glock 23", img:"assets/weapons/WEAPON_G23.png", r:2},
