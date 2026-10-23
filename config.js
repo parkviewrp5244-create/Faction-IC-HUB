@@ -22,8 +22,8 @@ window.CONFIG = {
   roe: [
     {t:"Scheme Requirements & Guidelines", b:"<p>Read About The Requirments Below.</p><div class='warn'><b>Warning</b>Any abuse of the Illegal Faction Scheme will result in removal.</div><ul><li>To Qualify For The Illegal Faction Scheme Your Faction Must Have Some Sort Of Roleplay Built Up And Logged, Read Below For What This Includes.</li><li>Interactions, Screens, Newspapers, Block Partys / Block Events And Must Have Quality Serious Roleplay</li></ul>"},
     {t:"Scheme Drop Schedule & Weapon Regulations", b:"<p>Drug And Weapon Drops Will Take Place Every Friday, Every Faction Tier Including Tier 1, Tier 1.5, Tier 2 Recieves A Different Amount Of Weapons Every Drop. Tier 1 Receives 6, Tier 1.5 Receives 8, Tier 2 Receives 10. etc.</p>"},
-    {t:"Faction Rules of Engagement", b:"<p>Your rules of engagement.</p>"},
-    {t:"Weapon & Ammunition Transaction Limits", b:"<p>Your limits.</p>"}
+    {t:"Faction Rules of Engagement", b:"<p>https://docs.google.com/document/d/1B5pCV5nVcyfHL2DLUaj8uQJaiE-C00UBI5wxuVLnQqk/edit?usp=sharing</p>"},
+    {t:"Weapon & Ammunition Transaction Limits", b:"<p>Tier 1 Factions Are Limited To Trading 1 Weapon Every 7 Days, Limited To Selling // Buying 2 Weapons Every 7 Days. Tier 1.5 Is Limited To Trading 2 Weapons Every 7 Days, Limited To Selling // Buying 4 Weapons Every 7 Days. Tier 2 Is Limited To Trading 4 Weapons Every 7 Days, Limited To Selling // Buying 6 Weapons Every 7 Days.</p>"}
   ],
   // Weapon spin. r = rarity stars 1-5. img = file in assets/weapons/
   tiers: [
