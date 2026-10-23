@@ -20,7 +20,7 @@ window.CONFIG = {
   ],
   // ROE sections: t = title, b = HTML body
   roe: [
-    {t:"Scheme Requirements & Guidelines", b:"<p>Describe your scheme here.</p><div class='warn'><b>Warning</b>Any abuse of the Illegal Civilian Scheme will result in removal.</div><ul><li>Rule one</li><li>Rule two</li></ul>"},
+    {t:"Scheme Requirements & Guidelines", b:"<p>Read About The Requirments Below.</p><div class='warn'><b>Warning</b>Any abuse of the Illegal Faction Scheme will result in removal.</div><ul><li>To Qualify For The Illegal Faction Scheme Your Faction Must Have Some Sort Of Roleplay Built Up And Logged, Read Below For What This Includes.</li><li>Interactions, Screens, Newspapers, Block Partys / Block Events And Must Have Quality Serious Roleplay</li></ul>"},
     {t:"Scheme Drop Schedule & Weapon Regulations", b:"<p>Drop days, weapon tiers, etc.</p>"},
     {t:"Faction Rules of Engagement", b:"<p>Your rules of engagement.</p>"},
     {t:"Weapon & Ammunition Transaction Limits", b:"<p>Your limits.</p>"}
