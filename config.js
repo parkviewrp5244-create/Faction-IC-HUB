@@ -1,7 +1,7 @@
 // ====== EDIT THIS FILE ONLY ======
 window.CONFIG = {
   name: "Faction Hub",
-  tagline: "The home of the Faction Scheme. Read the rules, submit your faction thread, and see where every crew stands on the map.",
+  tagline: "The home of the Faction Scheme. Read the rules, submit your faction thread.",
   footer: "SOLS V2 · FACTION MANAGEMENT",
   logo: "assets/logo.png",
   bg: "assets/bg.jpg",
@@ -22,7 +22,7 @@ window.CONFIG = {
   roe: [
     {t:"Scheme Requirements & Guidelines", b:"<p>Describe your scheme here.</p><div class='warn'><b>Warning</b>Any abuse of the Illegal Civilian Scheme will result in removal.</div><ul><li>Rule one</li><li>Rule two</li></ul>"},
     {t:"Scheme Drop Schedule & Weapon Regulations", b:"<p>Drop days, weapon tiers, etc.</p>"},
-    {t:"Illegal Civilian Rules of Engagement", b:"<p>Your rules of engagement.</p>"},
+    {t:"Faction Rules of Engagement", b:"<p>Your rules of engagement.</p>"},
     {t:"Weapon & Ammunition Transaction Limits", b:"<p>Your limits.</p>"}
   ],
   // Weapon spin. r = rarity stars 1-5. img = file in assets/weapons/
