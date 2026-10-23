@@ -11,9 +11,8 @@ const noDb=()=>`<div class="card center">Backend not set up yet. Add your Fireba
 const stat=(t,m,b='')=>`<div class="mid2"><div class="card stat center"><div class="ic">⇪</div><small class="o">YOUR THREAD STATUS</small><h2>${t}</h2><p class="m">${m}</p>${b||'<a class="btn" href="#/">Back to hub</a>'}</div></div>`;
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const V={
-home(){A.innerHTML=`<div class="hero" style="background-image:linear-gradient(#000b,#000e),url(${esc(C.bg)})">${bar(0,'<a class="btn" href="#/admin">🔒 Management Login</a>')}<div class="mid">${logo()}<h1>${esc(C.name)}</h1><p>${esc(C.tagline)}</p>
- <div class="row"><a class="btn pri" href="#/roe">Browse Illegal Civ ROE</a><a class="btn" href="#/submit">Submit Thread Submissions</a><a class="btn" href="#/map">Look at Illegal Civ Turfs</a><a class="btn" href="#/spin">Weapon Spin</a></div></div><small class="foot">${esc(C.footer)}</small></div>`},
-roe(){A.innerHTML=`<div class="wrap">${bar()}<div class="center">${logo('sm')}<h1 class="disp">${esc(C.name)}<br>ROE</h1><small class="m jt">JUMP TO SECTION</small></div>
+home(){A.innerHTML=`<div class="hero" style="background-image:linear-gradient(#000b,#000e),url(${esc(C.bg)})"><div class="topbar hb"><span></span><div class="tc"><a class="btn" href="#/roe">Browse Faction ROE</a><a class="btn" href="#/submit">Submit Thread Submissions</a><a class="btn" href="#/map">Look at Faction Turfs</a><a class="btn" href="#/spin">Weapon Spin</a></div><span class="tr"><button class="btn tmb" onclick="tt()">${lm()}</button><a class="btn" href="#/admin">🔒 Management Login</a></span></div><div class="mid">${logo()}<h1>${esc(C.name)}</h1><p>${esc(C.tagline)}</p></div><small class="foot">${esc(C.footer)}</small></div>`},
+roe(){A.innerHTML=`<div class="wrap">${bar()}<div class="center">${logo('sm')}<h1 class="disp">Faction<br>ROE</h1><small class="m jt">JUMP TO SECTION</small></div>
  <div class="grid2">${C.roe.map((s,i)=>`<a class="card jump" href="#/roe" data-i="${i}"><b>0${i+1}</b> ${esc(s.t)}</a>`).join('')}</div>
  <select id="jd">${C.roe.map((s,i)=>`<option value="${i}">0${i+1}  ${esc(s.t)}</option>`).join('')}</select>
  ${C.roe.map((s,i)=>`<section class="card sec" id="s${i}"><b class="n">0${i+1}</b><h2 class="disp">${esc(s.t)}</h2><hr>${s.b}</section>`).join('')}</div>`;
@@ -21,7 +20,7 @@ roe(){A.innerHTML=`<div class="wrap">${bar()}<div class="center">${logo('sm')}<h
 async submit(){A.innerHTML=`<div class="wrap">${bar()}<div id="b"></div></div>`;const b=$('#b');if(!ok)return b.innerHTML=noDb();
  const id=localStorage.tid;
  if(id){try{const d=await db.collection('threads').doc(id).get();if(d.exists){const s=d.data();
-  if(s.status=='pending')return A.innerHTML=stat('Application under review',`Illegal Civ Management is reviewing ${esc(s.group)}. You can submit another application once this one is approved or denied.`);
+  if(s.status=='pending')return A.innerHTML=stat('Application under review',`Faction Management is reviewing ${esc(s.group)}. You can submit another application once this one is approved or denied.`);
   A.innerHTML=stat(`${esc(s.group)} was ${s.status}`,s.status=='approved'?'Check the turf map!':'You can send in a new thread.','<button class="btn pri" id="n">Submit another</button>');
   return $('#n').onclick=()=>{localStorage.removeItem('tid');V.submit()}}}catch(e){}}
  b.innerHTML=`<div class="center">${logo('sm')}<h1 class="disp">Thread<br>Submission</h1></div><form id="f" class="card"><div class="grid2"><label>Group name<input name="group" required></label><label>Borough<select name="borough">${C.boroughs.map(x=>`<option>${esc(x)}</option>`).join('')}</select></label><label>Leader Discord<input name="discord" required></label><label>Thread link (optional)<input name="link"></label></div>
