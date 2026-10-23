@@ -4,7 +4,7 @@ if(ok){firebase.initializeApp(C.firebase);db=firebase.firestore();auth=firebase.
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 // ===== EDIT THE WORDING OF THE PAGES HERE =====
 const W={back:'← Home',
- roe:['RULEBOOK','Faction rulebook','Read every chapter before you run with a crew.','Chapters'],
+ roe:['RULEBOOK','Faction rulebook','Read every chapter before you attemp to join a faction.','Chapters'],
  sub:['APPLICATION','Register your faction','Answer properly. Staff read every answer before your faction is accepted.','Send application'],
  st:['STATUS','Your application is in','Staff are looking at it. You can send another once this one is accepted or declined.'],
  spin:['WEAPON ROLL','Roll your weapon','Choose a tier, pick how many rolls, then hit roll. Every gun in a tier has the same chance. Each roll lands one gun and it drops into the box below.','Choose a tier','Landed guns','Nothing rolled yet. Your guns will land here.','Can drop in'],
