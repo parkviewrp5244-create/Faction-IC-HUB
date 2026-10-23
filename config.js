@@ -29,8 +29,6 @@ window.CONFIG = {
   tiers: [
     {name:"Tier 1", weapons:[
       {n:"Glock 17 Gen 5", img:"assets/weapons/WEAPON_17G5.png", r:2},
-      {n:"Glock 43 MOS", img:"assets/weapons/WEAPON_43MOS.png", r:2},
-      {n:"Glock 45 MOS", img:"assets/weapons/WEAPON_45MOS.png", r:2},
       {n:"Callous", img:"assets/weapons/WEAPON_CALLOUS.png", r:2},
       {n:"Canik TP9", img:"assets/weapons/WEAPON_CANIK.png", r:2},
       {n:"Glock CPT", img:"assets/weapons/WEAPON_CPT.png", r:2},
