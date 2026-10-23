@@ -24,7 +24,7 @@ async submit(){A.innerHTML=page(W.sub[0],W.sub[1],W.sub[2],'<div id="b"></div>')
   if(s.status=='pending')return A.innerHTML=stat(`${esc(s.group)} is being reviewed`,W.st[2]);
   A.innerHTML=stat(`${esc(s.group)} was ${s.status=='approved'?'accepted':'declined'}`,s.status=='approved'?'Staff accepted your faction.':'You can send in a new application.','<button class="go" id="n">Send another</button>');
   return $('#n').onclick=()=>{localStorage.removeItem('tid');V.submit()}}}catch(e){}}
- b.innerHTML=`<form id="f"><div class="box grid2"><label>Faction name<input name="group" required></label><label>Area<select name="borough">${C.boroughs.map(x=>`<option>${esc(x)}</option>`).join('')}</select></label><label>Leader Discord<input name="discord" required></label><label>Thread link (optional)<input name="link"></label></div>
+ b.innerHTML=`<form id="f"><div class="box grid2"><label>Faction name<input name="group" required></label><label>Area<select name="borough">${C.boroughs.map(x=>`<option>${esc(x)}</option>`).join('')}</select></label><label>Leader Discord<input name="discord" required></label><label>Thread link<input name="link"></label></div>
  ${C.questions.map((q,i)=>`<div class="box"><label><span class="qn">${i+1}</span>${esc(q)}<textarea name="q${i}" required rows="3"></textarea></label></div>`).join('')}<button class="go">${W.sub[3]}</button></form>`;
  $('#f').onsubmit=async e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target));const r=await db.collection('threads').add({group:f.group,borough:f.borough,discord:f.discord,link:f.link,answers:C.questions.map((q,i)=>({q,a:f['q'+i]})),status:'pending',ts:Date.now()});localStorage.tid=r.id;V.submit()}},
 spin(){let ti=0,n=3,busy=0;const T=()=>C.tiers[ti],S=W.spin;
