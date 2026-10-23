@@ -28,15 +28,38 @@ window.CONFIG = {
   // Weapon spin. r = rarity stars 1-5. img = file in assets/weapons/
   tiers: [
     {name:"Tier 1", weapons:[
-      {n:"Glock 43X", img:"assets/weapons/WEAPON_ILLEGALGLOCK43X.png", r:2},
-      {n:"Glock 17 Red Switch", img:"assets/weapons/WEAPON_GLOCK17REDSWITCH.png", r:2},
-      {n:"Glock 19 G5", img:"assets/weapons/WEAPON_GLOCK19GEN5.png", r:3}]},
+      {n:"1911", img:"assets/weapons/WEAPON_1911.png", r:2},
+      {n:"Glock 17", img:"assets/weapons/WEAPON_GLOCK17.png", r:2},
+      {n:"Glock 19 Gen 5", img:"assets/weapons/WEAPON_GLOCK19GEN5.png", r:2},
+      {n:"Glock 19X", img:"assets/weapons/WEAPON_GLOCK19X.png", r:2},
+      {n:"Glock 19XB", img:"assets/weapons/WEAPON_GLOCK19XB.png", r:2},
+      {n:"Glock 21 Gen 5", img:"assets/weapons/WEAPON_GLOCK21GEN5.png", r:2},
+      {n:"Glock 22", img:"assets/weapons/WEAPON_GLOCK22.png", r:2},
+      {n:"Glock 40", img:"assets/weapons/WEAPON_GLOCK40.png", r:3},
+      {n:"Glock 45", img:"assets/weapons/WEAPON_GLOCK45.png", r:3},
+      {n:"Glock Camo", img:"assets/weapons/WEAPON_GLOCKCAMO.png", r:3},
+      {n:"PX4", img:"assets/weapons/WEAPON_PX4.png", r:2},
+      {n:"Sig P365X", img:"assets/weapons/WEAPON_SIGP365X.png", r:3}]},
     {name:"Tier 1.5", weapons:[
-      {n:"Weapon A", img:"assets/weapons/a.png", r:3},
-      {n:"Weapon B", img:"assets/weapons/b.png", r:2}]},
+      {n:"Glock 17 Gen 3 Switch", img:"assets/weapons/WEAPON_GLOCK17GEN3SWITCH.png", r:3},
+      {n:"Glock 17 Gen 4 Switch", img:"assets/weapons/WEAPON_GLOCK17GEN4SWITCH.png", r:3},
+      {n:"Glock 17 Gen 5 Switch", img:"assets/weapons/WEAPON_GLOCK17GEN5SWITCH.png", r:3},
+      {n:"Glock 17 Blue Switch", img:"assets/weapons/WEAPON_GLOCK17BLUESWITCH.png", r:3},
+      {n:"Glock 17 Grey Switch", img:"assets/weapons/WEAPON_GLOCK17GREYSWITCH.png", r:3},
+      {n:"Glock 17 Red Switch", img:"assets/weapons/WEAPON_GLOCK17REDSWITCH.png", r:3},
+      {n:"Glock 19 Gen 5 Switch", img:"assets/weapons/WEAPON_GLOCK19GEN5SWITCH.png", r:3},
+      {n:"Glock 26 Switch", img:"assets/weapons/WEAPON_GLOCK26SWITCH.png", r:3},
+      {n:"Glock 18C", img:"assets/weapons/WEAPON_GLOCK18C.png", r:4},
+      {n:"Illegal Glock 43X", img:"assets/weapons/WEAPON_ILLEGALGLOCK43X.png", r:4}]},
     {name:"Tier 2", weapons:[
-      {n:"Weapon C", img:"assets/weapons/c.png", r:3},
-      {n:"Weapon D", img:"assets/weapons/d.png", r:4}]}
+      {n:".223 ARP Pistol", img:"assets/weapons/WEAPON_223ARPISTOL.png", r:4},
+      {n:"Black ARP", img:"assets/weapons/WEAPON_BLACKARP.png", r:4},
+      {n:"Blue ARP 7.62", img:"assets/weapons/WEAPON_BLUEARP762.png", r:5},
+      {n:"SKARP", img:"assets/weapons/WEAPON_SKARP.png", r:4},
+      {n:"WTARP", img:"assets/weapons/WEAPON_WTARP.png", r:4},
+      {n:"ZPAP92", img:"assets/weapons/WEAPON_ZPAP92.png", r:5},
+      {n:"Micro Draco", img:"assets/weapons/WEAPON_MICRODRACO.png", r:4},
+      {n:"Black Micro Draco", img:"assets/weapons/WEAPON_BLACKMICRODRACO.png", r:5}]}
   ],
   spinAmounts: [1,2,3,4,5,6,7,8,9,10]
 };
