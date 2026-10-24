@@ -4,7 +4,7 @@ if(ok){firebase.initializeApp(C.firebase);db=firebase.firestore();auth=firebase.
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 // ===== EDIT THE WORDING OF THE PAGES HERE =====
 const W={back:'← Home',
- roe:['RULEBOOK','Faction rulebook','Read every chapter before you attemp to join a faction.','Chapters'],
+ roe:['RULEBOOK','Faction rulebook','Read every chapter before you run with a crew.','Chapters'],
  sub:['APPLICATION','Register your faction','Answer properly. Staff read every answer before your faction is accepted.','Send application'],
  st:['STATUS','Your application is in','Staff are looking at it. You can send another once this one is accepted or declined.'],
  spin:['WEAPON ROLL','Roll your weapon','Choose a tier, pick how many rolls, then hit roll. Every gun in a tier has the same chance. Each roll lands one gun and it drops into the box below.','Choose a tier','Landed guns','Nothing rolled yet. Your guns will land here.','Can drop in'],
@@ -15,7 +15,7 @@ const noDb=()=>`<div class="box c">Backend not set up yet. Add your Firebase key
 const stat=(t,m,b='')=>page(W.st[0],t,m,b?`<div class="box">${b}</div>`:'');
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const V={
-home(){A.innerHTML=`<div class="hero" style="background-image:linear-gradient(#000b,#000e),url(${esc(C.bg)})"><div class="topbar hb"><span></span><div class="tc"><a class="btn" href="#/roe">Browse Faction ROE</a><a class="btn" href="#/submit">Submit Thread Submissions</a><a class="btn" href="#/spin">Weapon Spin</a></div><span class="tr"><a class="btn" href="#/admin">🔒 Management Login</a></span></div><div class="mid">${logo()}<h1>${esc(C.name)}</h1><p>${esc(C.tagline)}</p></div><small class="foot">${esc(C.footer)}</small></div>`},
+home(){A.innerHTML=`<div class="hero" style="background-image:linear-gradient(#000b,#000e),url(${esc(C.bg)})"><div class="topbar hb"><span></span><div class="tc"><a class="btn" href="#/roe">Browse Faction ROE</a><a class="btn" href="#/submit">Submit Thread Submissions</a><a class="btn" href="#/spin">Weapon Spin</a><a class="btn" href="#/forum">Forums</a></div><span class="tr"><a class="btn" href="#/admin">🔒 Management Login</a></span></div><div class="mid">${logo()}<h1>${esc(C.name)}</h1><p>${esc(C.tagline)}</p></div><small class="foot">${esc(C.footer)}</small></div>`},
 roe(){A.innerHTML=page(W.roe[0],W.roe[1],W.roe[2],`<div class="chips">${C.roe.map((s,i)=>`<a class="chip" data-i="${i}"><b>${i+1}</b>${esc(s.t)}</a>`).join('')}</div>${C.roe.map((s,i)=>`<section class="box ch" id="s${i}"><div class="num">${i+1}</div><div><h2>${esc(s.t)}</h2><div class="body">${s.b}</div></div></section>`).join('')}`);
  document.querySelectorAll('.chip').forEach(a=>a.onclick=()=>document.getElementById('s'+a.dataset.i).scrollIntoView({behavior:'smooth'}))},
 async submit(){A.innerHTML=page(W.sub[0],W.sub[1],W.sub[2],'<div id="b"></div>');const b=$('#b');if(!ok)return b.innerHTML=noDb();
@@ -24,7 +24,7 @@ async submit(){A.innerHTML=page(W.sub[0],W.sub[1],W.sub[2],'<div id="b"></div>')
   if(s.status=='pending')return A.innerHTML=stat(`${esc(s.group)} is being reviewed`,W.st[2]);
   A.innerHTML=stat(`${esc(s.group)} was ${s.status=='approved'?'accepted':'declined'}`,s.status=='approved'?'Staff accepted your faction.':'You can send in a new application.','<button class="go" id="n">Send another</button>');
   return $('#n').onclick=()=>{localStorage.removeItem('tid');V.submit()}}}catch(e){}}
- b.innerHTML=`<form id="f"><div class="box grid2"><label>Faction name<input name="group" required></label><label>Area<select name="borough">${C.boroughs.map(x=>`<option>${esc(x)}</option>`).join('')}</select></label><label>Leader Discord<input name="discord" required></label><label>Thread link<input name="link"></label></div>
+ b.innerHTML=`<form id="f"><div class="box grid2"><label>Faction name<input name="group" required></label><label>Area<select name="borough">${C.boroughs.map(x=>`<option>${esc(x)}</option>`).join('')}</select></label><label>Leader Discord<input name="discord" required></label><label>Thread link (optional)<input name="link"></label></div>
  ${C.questions.map((q,i)=>`<div class="box"><label><span class="qn">${i+1}</span>${esc(q)}<textarea name="q${i}" required rows="3"></textarea></label></div>`).join('')}<button class="go">${W.sub[3]}</button></form>`;
  $('#f').onsubmit=async e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target));const r=await db.collection('threads').add({group:f.group,borough:f.borough,discord:f.discord,link:f.link,answers:C.questions.map((q,i)=>({q,a:f['q'+i]})),status:'pending',ts:Date.now()});localStorage.tid=r.id;V.submit()}},
 spin(){let ti=0,n=3,busy=0;const T=()=>C.tiers[ti],S=W.spin;
@@ -62,5 +62,5 @@ function panel(b){let box=null,pv,f='pending',docs=[],p=[];const LB={pending:'Wa
   document.querySelectorAll('[data-dn]').forEach(e=>e.onclick=()=>db.collection('threads').doc(e.dataset.dn).update({status:'denied'}));
   document.querySelectorAll('[data-dl]').forEach(e=>e.onclick=()=>confirm('Delete?')&&db.collection('threads').doc(e.dataset.dl).delete())};
  unsub&&unsub();unsub=db.collection('threads').orderBy('ts','desc').onSnapshot(s=>{docs=s.docs;render()})}
-function route(){unsub&&unsub();unauth&&unauth();unsub=unauth=null;const k=location.hash.slice(2)||'home';(V[k]||V.home)();scrollTo(0,0)}
+function route(){unsub&&unsub();unauth&&unauth();unsub=unauth=null;const k=location.hash.slice(2).split('/')[0].split('?')[0]||'home';(V[k]||V.home)();scrollTo(0,0)}
 addEventListener('hashchange',route);route();
