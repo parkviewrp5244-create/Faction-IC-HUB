@@ -5,10 +5,12 @@ window.CONFIG = {
   footer: "SOLS V2 · FACTION MANAGEMENT",
   logo: "assets/logo.png",
   bg: "assets/bg.jpg",
-  // Firebase (free) - see README. Needed for submissions + admin + map turfs.
+  // Firebase (free). Needed for applications, admin, Threads and the forum.
   firebase: { apiKey:"AIzaSyBYf0bYRUUzWyhRYwFafQaie-DzeNAysmw", authDomain:"faction-ic-hub.firebaseapp.com", projectId:"faction-ic-hub", appId:"1:644989604483:web:7ce067e55cece017b381b6" },
-  // Map image size in pixels (the width/height of assets/map.jpg)
-  map: { img:"assets/map.jpg", w:1024, h:1536, start:{x:720, y:2080, zoom:1} },
+  // Optional: Discord login for the forum (see setup notes). Leave empty to keep the Forums button hidden.
+  discord: { clientId:"", guildId:"" },
+  // Optional: free Cloudinary account so players can upload videos in Threads. Leave empty to allow image uploads and links only.
+  cloudinary: { cloud:"", preset:"" },
   boroughs: ["Southside","Eastside","Westside","Northside"],
   // Thread submission questions (add/remove freely)
   questions: [
@@ -22,7 +24,7 @@ window.CONFIG = {
   roe: [
     {t:"Scheme Requirements & Guidelines", b:"<p>Read About The Requirments Below.</p><div class='warn'><b>Warning</b>Any abuse of the Illegal Faction Scheme will result in removal.</div><ul><li>To Qualify For The Illegal Faction Scheme Your Faction Must Have Some Sort Of Roleplay Built Up And Logged, Read Below For What This Includes.</li><li>Interactions, Screens, Newspapers, Block Partys / Block Events And Must Have Quality Serious Roleplay</li></ul>"},
     {t:"Scheme Drop Schedule & Weapon Regulations", b:"<p>Drug And Weapon Drops Will Take Place Every Friday, Every Faction Tier Including Tier 1, Tier 1.5, Tier 2 Recieves A Different Amount Of Weapons Every Drop. Tier 1 Receives 6, Tier 1.5 Receives 8, Tier 2 Receives 10. etc.</p>"},
-    {t:"Faction Rules of Engagement", b:"<p>https://docs.google.com/document/d/1B5pCV5nVcyfHL2DLUaj8uQJaiE-C00UBI5wxuVLnQqk/edit?usp=sharing</p>"},
+    {t:"Faction Rules of Engagement", b:"<p><a href='https://docs.google.com/document/d/1B5pCV5nVcyfHL2DLUaj8uQJaiE-C00UBI5wxuVLnQqk/edit?usp=sharing' target='_blank' rel='noopener'>Open the Rules of Engagement document</a></p>"},
     {t:"Weapon & Ammunition Transaction Limits", b:"<p>Tier 1 Factions Are Limited To Trading 1 Weapon Every 7 Days, Limited To Selling // Buying 2 Weapons Every 7 Days. Tier 1.5 Is Limited To Trading 2 Weapons Every 7 Days, Limited To Selling // Buying 4 Weapons Every 7 Days. Tier 2 Is Limited To Trading 4 Weapons Every 7 Days, Limited To Selling // Buying 6 Weapons Every 7 Days.</p>"}
   ],
   // Weapon spin. r = rarity stars 1-5. img = file in assets/weapons/
@@ -65,7 +67,6 @@ window.CONFIG = {
       {n:"G19X G", img:"assets/weapons/WEAPON_G19XG.png", r:2},
       {n:"G17 Binary", img:"assets/weapons/WEAPON_WG17B.png", r:2},
       {n:"G17 CH", img:"assets/weapons/WEAPON_WG17CH.png", r:2},
-      {n:"G19X G", img:"assets/weapons/WEAPON_G19XG.png", r:2},
       {n:"Glock 20", img:"assets/weapons/WEAPON_G20.png", r:3},
       {n:"Glock 21 Binary", img:"assets/weapons/WEAPON_G21B.png", r:2},
       {n:"G17 G", img:"assets/weapons/WEAPON_WG17G.png", r:2},
@@ -73,8 +74,6 @@ window.CONFIG = {
       {n:"TP9", img:"assets/weapons/WEAPON_WTP9.png", r:2},
       {n:"XD-9", img:"assets/weapons/WEAPON_WXD9.png", r:2},
       {n:"P80", img:"assets/weapons/WEAPON_WP80.png", r:2},
-      {n:"Glock 20", img:"assets/weapons/WEAPON_G20.png", r:2},
-      {n:"Glock 21 Binary", img:"assets/weapons/WEAPON_G21B.png", r:2},
       {n:"DComb", img:"assets/weapons/WEAPON_DCOMB.png", r:3},
       {n:"Glock 26 Switch", img:"assets/weapons/WEAPON_G26S.png", r:3},
       {n:"Glock 45 Switch", img:"assets/weapons/WEAPON_G45S.png", r:3},
