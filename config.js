@@ -30,7 +30,7 @@ window.CONFIG = {
   // Weapon spin. r = rarity stars 1-5. img = file in assets/weapons/
   tiers: [
     {name:"Tier 1", weapons:[
-      {n:"1911", img:"assets/weapons/WEAPON_1911.png", r:2},
+      {n:"1911", img:"assets/weapons/WEAPON_1911.png", r:4},
       {n:"Canik TP9", img:"assets/weapons/WEAPON_CANIK.png", r:2},
       {n:"Glock CPT", img:"assets/weapons/WEAPON_CPT.png", r:2},
       {n:"Fabrique Nationale", img:"assets/weapons/WEAPON_FFN.png", r:2},
