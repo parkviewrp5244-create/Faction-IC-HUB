@@ -48,21 +48,21 @@ window.CONFIG = {
       {n:"Glock 45", img:"assets/weapons/WEAPON_G45S.png", r:6},
       {n:"Glock 23", img:"assets/weapons/WEAPON_G233.png", r:6},
       {n:"Mac-10", img:"assets/weapons/WEAPON_MAC10.png", r:6},
-      {n:"Tec-9", img:"assets/weapons/WEAPON_TEC9.png", r:6},
       {n:"Glock 19 With A Switch", img:"assets/weapons/WEAPON_19SWITCH.png", r:6},
       {n:"Glock 43 MOS", img:"assets/weapons/WEAPON_43MOS.png", r:6},
-      {n:"Glock 45 MOS", img:"assets/weapons/WEAPON_45MOS.png", r:6},
       {n:"Fabrique Nationale 2.0", img:"assets/weapons/WEAPON_FN.png", r:6},
       {n:"Glock 26 With A Switch", img:"assets/weapons/WEAPON_G26S.png", r:6}]},
     {name:"Tier 2", weapons:[
       {n:"Glock AP3", img:"assets/weapons/WEAPON_AP3.png", r:6},
       {n:"Glock 205 Switch", img:"assets/weapons/WEAPON_G205.png", r:6},
       {n:"4 Inch ARP", img:"assets/weapons/WEAPON_ARPSH.png", r:6},
+      {n:"Glock 45 MOS", img:"assets/weapons/WEAPON_45MOS.png", r:6},
       {n:"Draco", img:"assets/weapons/WEAPON_DRACOZ.png", r:6},
+      {n:"Tec-9", img:"assets/weapons/WEAPON_TEC9.png", r:6},
       {n:"Draco Black", img:"assets/weapons/WEAPON_DRACO2.png", r:6},
       {n:"Kriss Vector", img:"assets/weapons/WEAPON_KVEC.png", r:6},
       {n:"MAC-10", img:"assets/weapons/WEAPON_MAC10.png", r:6},
-      {n:"MCX", img:"assets/weapons/WEAPON_MCX.png", r:6}]}
+      {n:"Sig-MCX", img:"assets/weapons/WEAPON_MCX.png", r:6}]}
   ],
   spinAmounts: [1,2,3,4,5,6,7,8,9,10]
 };
