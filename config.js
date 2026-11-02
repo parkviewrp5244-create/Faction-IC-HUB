@@ -39,7 +39,6 @@ window.CONFIG = {
       {n:"Glock 43 Grip", img:"assets/weapons/WEAPON_G43G.png", r:2},
       {n:"HK45 Sidearm", img:"assets/weapons/WEAPON_HK45.png", r:2},
       {n:"G43 G", img:"assets/weapons/WEAPON_G43G.png", r:2},
-      {n:"Glock 45", img:"assets/weapons/WEAPON_G45.png", r:3},
       {n:"HK45", img:"assets/weapons/WEAPON_HK45.png", r:3},
       {n:"Olive Glock 17", img:"assets/weapons/WEAPON_OLIVE17.png", r:2},
       {n:"Olive Glock 19", img:"assets/weapons/WEAPON_OLIVEG19.png", r:2},
