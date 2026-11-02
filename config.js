@@ -43,7 +43,7 @@ window.CONFIG = {
       {n:"HK45", img:"assets/weapons/WEAPON_HK45.png", r:3},
       {n:"Olive Glock 17", img:"assets/weapons/WEAPON_OLIVE17.png", r:2},
       {n:"Olive Glock 19", img:"assets/weapons/WEAPON_OLIVEG19.png", r:2},
-      {n:"P88P", img:"assets/weapons/WEAPON_P88P.png", r:2},
+      {n:"P88P", img:"assets/weapons/WEAPON_P88P.png", r:2}]},
     {name:"Tier 1.5", weapons:[
       {n:"Callous", img:"assets/weapons/WEAPON_CALLOUS.png", r:3},
       {n:"Glock 45", img:"assets/weapons/WEAPON_G45S.png", r:3},
@@ -63,7 +63,7 @@ window.CONFIG = {
       {n:"Draco Black", img:"assets/weapons/WEAPON_DRACO2.png", r:2},
       {n:"Kriss Vector", img:"assets/weapons/WEAPON_KVEC.png", r:4},
       {n:"MAC-10", img:"assets/weapons/WEAPON_MAC10.png", r:4},
-      {n:"MCX", img:"assets/weapons/WEAPON_MCX.png", r:4},
+      {n:"MCX", img:"assets/weapons/WEAPON_MCX.png", r:4}]}
   ],
   spinAmounts: [1,2,3,4,5,6,7,8,9,10]
 };
